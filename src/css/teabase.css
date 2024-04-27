@@ -1,0 +1,130 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+:root {
+	background-color: #f8f4f0;
+	--color-primary: #45230A;
+}
+
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+h1 {
+	color: var(--color-primary);
+    font-family: "Bad Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: var(--color-primary);
+    font-family: "Bad Script", cursive;
+	font-weight: 400;
+	font-style: normal; 
+}
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+button {
+    border: 1px solid #45230A;
+	background-color: #f8f4f0;
+	color: #45230A;
+	padding: 5px 50px;
+	text-align: center;
+	font-family: "Bad Script", cursive;
+	font-style: normal;
+	font-size:16px;
+	border-radius: 60px;
+    margin-bottom: 20px;
+    margin-left:20px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #comment {
+    color: #E06E1C;
+    text-align: center;
+
+  }
+  
+  .music-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .left-icon {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .right-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  #arrows {
+    margin-top:40px;
+    display:none;
+  }
+
+  .dot {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    border:1px solid #45230A;  
+    display: table;
+    margin: 0 auto;
+
+}
+
+  .container {
+	height: 500px;
+	position: relative;
+  }
+  
+  .center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-40%, -40%);
+	transform: translate(-30%, -30%);
+  }
+  
+/* This uses the same value as --size-xs. */
+@media screen and (width >= 320px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+}

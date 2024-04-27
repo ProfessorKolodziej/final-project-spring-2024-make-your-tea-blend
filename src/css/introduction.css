@@ -5,15 +5,14 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 :root {
 	background-color: #f8f4f0;
 	--color-primary: #45230A;
-	font-family: "Bad Script", cursive;
-	font-weight: 400;
-	font-style: normal;
 }
+
 
 /*
 CSS doesn't allow variables to be used in media
@@ -29,27 +28,15 @@ to help you out.
 
 h1 {
 	color: var(--color-primary);
-	text-align: center;
+    font-family: "Bad Script", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
-.container {
-	height: 200px;
-	position: relative;
-  }
-  
-  .center {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-40%, -40%);
-	transform: translate(-40%, 80%);
-  }
-
-  .music-icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
   }
 
 button {
@@ -64,6 +51,32 @@ button {
 	border-radius: 60px;
   }
 
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .music-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .container {
+	height: 500px;
+	position: relative;
+  }
+  
+  .center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-40%, -40%);
+	transform: translate(-30%, -30%);
+  }
+  
 /* This uses the same value as --size-xs. */
 @media screen and (width >= 320px) {
 	.content-container {
